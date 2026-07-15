@@ -79,7 +79,7 @@ $$
 =\frac {1}{R_s}\bold {E}
 =-\frac {1}{R_s}\bold {\nabla}V
 $$
-當一個電流 $I$，自某點（不妨設為原點）注入此平面，顯然這已經成為了流體力學中的一個 source（如果是流入則為 sink），此時我們又有高斯定律
+當一個點電流源 $I$，自某點（不妨設為原點）注入此平面，顯然這已經成為了流體力學中的一個 source（如果是流入則為 sink），此時我們又有連續方程
 $$
 \bold{\nabla} \cdot \bold{K}=I\delta(\bold{r})
 $$
@@ -95,15 +95,43 @@ $$
 $$
 V(r)=-\frac{R_s I}{2\pi} \ln r + C
 $$
+若電流從A注入、從B流出，則
+$$
+\begin{align}
+V(P)
+&= -\frac{R_s I}{2\pi} \ln|P-A|
++\frac{R_s I}{2\pi} \ln|P-B|
++C \\
+&= \frac{R_s I}{2\pi} \ln \frac{|P-B|}{|P-A|} + C
+\end{align}
+$$
+現在考慮四探針的情況，
+
 I+        V+      V-        I- 
 
 ●-------●-------●-------●
 
+A        M        N        B
 
-
-
-
-
+設四探針皆相隔距離 $s$，則中央兩點電位分別為
+$$
+\begin{align}
+&V_+=\frac{R_s I}{2\pi} \ln \frac{|M-B|}{|M-A|} 
+=\frac{R_s I}{2\pi} \ln 2
+\\
+&V_-=\frac{R_s I}{2\pi} \ln \frac{|N-B|}{|N-A|} 
+=-\frac{R_s I}{2\pi} \ln 2
+\end{align}
+$$
+則電位差是
+$$
+\Delta V = V_+-V_-
+=\frac{R_s I}{\pi} \ln 2
+$$
+==故得==
+$$
+R_s=\frac {\pi}{\ln 2} \frac {\Delta V}{I}
+$$
 
 ## 4. 圓形 wafer 的幾何修正
 
