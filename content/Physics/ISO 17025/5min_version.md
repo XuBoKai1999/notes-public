@@ -225,17 +225,17 @@
 
 典型：
 
-[
+$$
 y \pm U
-]
+$$
 
 而
 
-[
+$$
 U=k u_c
-]
+$$
 
-GUM 說 expanded uncertainty 是 combined standard uncertainty (u_c) 乘 coverage factor (k)，常見 (k) 約為 2～3。
+GUM 說 expanded uncertainty 是 combined standard uncertainty $u_c$ 乘 coverage factor $k$，常見 $k$ 約為 2～3。
 
 在你們校正實驗室尤其重要：
 
